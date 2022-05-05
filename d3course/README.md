@@ -1,0 +1,3 @@
+# D3 Course Files
+
+Need to learn D3.js before Fall 2022.... fun....
