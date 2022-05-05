@@ -2,4 +2,3 @@
 
 Gotta learn frontend dev before fall 2022.... yay!
 
-edit: webstorm edit
