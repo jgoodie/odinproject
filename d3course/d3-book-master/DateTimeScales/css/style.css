@@ -1,0 +1,21 @@
+#chart-area {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#logo {
+    height:50px;
+}
+
+.navbar-brand {
+    height: 60px;
+    padding: 5px 0px;
+}
+
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px; /* We'll override height later */ background-color: teal;
+    margin-right: 2px;
+}

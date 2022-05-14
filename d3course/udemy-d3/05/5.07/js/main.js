@@ -91,7 +91,7 @@ function update(data) {
 
   // EXIT old elements not present in new data.
   rects.exit()
-    .attr("fill", "red")
+    .attr("fill", "grey")
     .transition(t)
       .attr("height", 0)
       .attr("y", y(0))
