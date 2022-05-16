@@ -1,0 +1,39 @@
+#chart-area {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#logo {
+    height:50px;
+}
+
+.navbar-brand {
+    height: 60px;
+    padding: 5px 0px;
+}
+
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px; /* We'll override height later */ background-color: teal;
+    margin-right: 2px;
+}
+
+/*.axis path,*/
+/*.axis line {*/
+/*    stroke: teal;*/
+/*    shape-rendering: crispEdges; }*/
+/*.axis text {*/
+/*    font-family: Optima, Futura, sans-serif; font-weight: bold;*/
+/*    font-size: 14px;*/
+/*    fill: teal;*/
+/*}*/
+
+/*p {*/
+/*    color: olive;*/
+/*}*/
+
+/*text {*/
+/*    fill: olive;*/
+/*}*/
