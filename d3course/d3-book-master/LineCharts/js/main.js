@@ -88,6 +88,7 @@ d3.csv("data/data.csv").then(function(data) {
     y.domain([0, d3.max(data, function(d) { return d.close; })]);
 
     // Add the valueline path.
+    // check CSS for path no fill options
     svg.append("path")
         .datum(data)
         .attr("class", "line")
