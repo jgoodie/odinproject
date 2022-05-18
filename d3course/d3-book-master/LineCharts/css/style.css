@@ -50,4 +50,10 @@ rect:hover {
     line-height: 20px;
 }
 
+path.line
+{
+    fill: none;
+    stroke: #000;
+}
+
 

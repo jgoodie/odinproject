@@ -89,7 +89,7 @@ d3.csv("data/data.csv").then(function(data) {
 
     // Add the valueline path.
     svg.append("path")
-        .data([data])
+        .datum(data)
         .attr("class", "line")
         .attr("d", line);
 
