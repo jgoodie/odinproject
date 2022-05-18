@@ -63,7 +63,7 @@ var x = d3.scaleTime().range([0, width]);
 var y = d3.scaleLinear().range([height, 0]);
 
 // define the line
-var valueline = d3.line()
+var line = d3.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.close); });
 
@@ -75,7 +75,7 @@ var svg = d3.select("body").append("svg")
         "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("data.csv").then(function(data) {
+d3.csv("data/data.csv").then(function(data) {
 
     // format the data
     data.forEach(function(d) {
@@ -91,7 +91,7 @@ d3.csv("data.csv").then(function(data) {
     svg.append("path")
         .data([data])
         .attr("class", "line")
-        .attr("d", valueline);
+        .attr("d", line);
 
     // Add the x Axis
     svg.append("g")
