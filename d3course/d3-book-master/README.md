@@ -7,7 +7,7 @@ These are sample code files to accompany the book “Interactive Data Visualizat
 
 Always find the latest book info at: [d3book.com](http://d3book.com)
 
-
+**Note from jgoodie:** As I work through this book, I'm creating my own versions of the sample code. Many of my sample project files have been updated to d3.v7 whereas the sample code from the book is d3.v4.
 
 ## Version
 
