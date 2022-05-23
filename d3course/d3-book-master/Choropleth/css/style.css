@@ -29,7 +29,7 @@ rect:hover {
     width: auto;
     height: auto;
     padding: 10px;
-    background-color: white;
+    background-color: grey;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -52,19 +52,61 @@ rect:hover {
 
 path.line
 {
-    fill: none;
-    /*stroke: #000;*/
+    fill: #000;
+    stroke: #000;
 }
 
-/*.line {*/
-/*    fill: none;*/
-/*    stroke: teal;*/
-/*    stroke-width: 0.5;*/
-/*}*/
+.line {
+    fill: none;
+    stroke: teal;
+    stroke-width: 0.5;
+}
 
 .safeLevel {
-    /*stroke: #ac2925;*/
+    stroke: #ac2925;
     stroke-dasharray: 2, 3;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.area {
+    stroke: #ac2925;
+}
+
+.area:hover {
+    fill: orange;
+}
+
+.axis line{
+    stroke: black;
+}
+
+.axis path{
+    stroke: black;
+}
+
+.axis text{
+    fill: black;
+}
+
+.pan rect {
+    fill: black;
+    opacity: 0.2;
+}
+
+.pan text {
+    fill: black;
+    font-size: 18px;
+    text-anchor: middle;
+}
+
+.pan:hover rect,
+.pan:hover text {
+    fill: blue;
 }
 
 
