@@ -19,7 +19,8 @@ document.body.appendChild(para);
 
 let recipes = [
     ["Lasagna Recipe", "lasagna.html"],
-    ["Apple Pie Recipe","applepie.html"]
+    ["Apple Pie Recipe","applepie.html"],
+    ["Amish Slaw Recipe","amishslaw.html"]
 ]
 
 let list = document.createElement('ul');
