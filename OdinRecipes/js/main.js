@@ -7,7 +7,6 @@ document.body.appendChild(h1);
 const para = document.createElement("p");
 textNode = document.createTextNode("This is the site for Odin Recipes");
 para.appendChild(textNode);
-
 document.body.appendChild(para);
 
 // const a = document.createElement("a");
