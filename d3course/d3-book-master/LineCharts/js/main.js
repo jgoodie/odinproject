@@ -1,25 +1,12 @@
-// set the dimensions and margins of the graph
 var margin = {top: 20, right: 20, bottom: 50, left: 70},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 var padding = 0;
-
-// parse the date / time
-//var parseTime = d3.timeParse("%d-%b-%y");
-
-//For converting Dates to strings
 var formatTime = d3.timeFormat("%Y");
 
-// set the ranges
 var xScale = d3.scaleTime().range([0, width]);
 var yScale= d3.scaleLinear().range([height, 0]);
-
-// define the line
-// var line = d3.line()
-//     .defined(d => d.average >=0)
-//     .x(d => xScale(d.date))
-//     .y(d => yScale(d.average));
 
 var line = d3.line()
     .defined(d => d.average >=0 && d.average <= 350)
@@ -30,7 +17,6 @@ var dangerline = d3.line()
     .defined(d => d.average > 350)
     .x(d => xScale(d.date))
     .y(d => yScale(d.average));
-
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -48,9 +34,6 @@ d3.csv("data/mauna_loa_co2_monthly_averages.csv").then(function(data) {
         d.average = +Number(d.average);
     });
 
-    // console.table(data, ["date", "average"]);
-
-    // Scale the range of the data
     xScale.domain(d3.extent(data, function(d) { return d.date; }));
     yScale.domain([310, d3.max(data, function(d) { return d.average; })]);
 

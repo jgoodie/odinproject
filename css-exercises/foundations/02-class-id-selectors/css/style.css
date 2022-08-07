@@ -1,0 +1,73 @@
+div {
+    color: white;
+    background-color: red;
+}
+
+
+/*!*Global Selectors *!*/
+
+/** {*/
+/*    color: black;*/
+/*}*/
+
+/*!*Type Selectors *!*/
+/*div {*/
+/*    color: #1144FF;*/
+/*}*/
+
+/*p {*/
+/*    !* hex example: *!*/
+/*    color: #776655;*/
+/*    !* rgb example: *!*/
+/*    !*color: rgb(100, 0, 127);*!*/
+/*    !* hsl example: *!*/
+/*    !*color: hsl(15, 82%, 56%);*!*/
+/*    font-family: Arial, sans-serif, "Times New Roman";*/
+/*    font-size: 22px;*/
+/*    font-weight: 100; !*font-weight: bold (700) or 1-1000*!*/
+/*    text-align: center;*/
+/*}*/
+
+
+/*!*Class Selector*!*/
+
+/*.alert-text {*/
+/*    color: #FF0000;*/
+/*}*/
+
+
+/*.subsection.header {*/
+/*    color: darkgreen;*/
+/*}*/
+
+/*.subsection#preview {*/
+/*    color: darkblue;*/
+/*}*/
+
+/*!*ID Selectors*!*/
+
+/*#title {*/
+/*    background-color: orange;*/
+/*}*/
+
+/*!*Grouping Selector*!*/
+
+/*.read,*/
+/*.unread {*/
+/*    color: white;*/
+/*    background-color: black;*/
+/*}*/
+
+/*.read {*/
+/*    !* several unique declarations *!*/
+/*}*/
+
+/*.unread {*/
+/*    !* several unique declarations *!*/
+/*}*/
+
+/*img {*/
+/*    height: auto;*/
+/*    width: 800px;*/
+/*}*/
+

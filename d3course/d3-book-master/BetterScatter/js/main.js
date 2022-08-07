@@ -18,7 +18,9 @@ var numDataPoints = 50;
 var xRange = Math.random() * 1000;
 var yRange = Math.random() * 1000;
 for (var i = 0; i < numDataPoints; i++) {
-    var newNumber1 = Math.floor(Math.random() * xRange); var newNumber2 = Math.floor(Math.random() * yRange); dataset.push([newNumber1, newNumber2]);
+    var newNumber1 = Math.floor(Math.random() * xRange);
+    var newNumber2 = Math.floor(Math.random() * yRange);
+    dataset.push([newNumber1, newNumber2]);
 }
 
 

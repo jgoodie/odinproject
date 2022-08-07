@@ -66,7 +66,7 @@ d3.select("body").on("click", function(){
     //New values for dataset
     var dataset = [];
     for (var i=0; i<25; i++){
-        var newNumber = Math.floor(Math.random() * 25 + 2);
+        var newNumber = Math.floor(Math.random() * 25 + 5);
         dataset.push(newNumber);
     }
 
@@ -78,10 +78,7 @@ d3.select("body").on("click", function(){
     svg.selectAll("rect")
         .data(dataset)
         .transition()
-        .delay(function(d, i) {
-            return i / dataset.length * 1000; })
         .duration(1000)
-        .ease(d3.easeBounceOut)
         .attr("y", function(d) {
             return h - yScale(d);
         })
@@ -96,10 +93,7 @@ d3.select("body").on("click", function(){
     svg.selectAll("text")
         .data(dataset)
         .transition()
-        .delay(function(d, i) {
-            return i / dataset.length * 1000; })
         .duration(1000)
-        .ease(d3.easeBounceOut)
         .text(function(d) {
             return d;
         })
